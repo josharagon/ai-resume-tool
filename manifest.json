@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Job Application Helper AI",
+    "version": "1.0",
+    "description": "Helps generate answers for job applications.",
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "activeTab",
+        "scripting",
+        "clipboardWrite"
+    ],
+    "host_permissions": ["https://api.openai.com/*"],
+    "options_page": "options.html",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  

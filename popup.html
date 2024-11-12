@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Job Application Helper</h1>
+
+  <label for="apiKeyInput">OpenAI API Key:</label>
+  <input type="password" id="apiKeyInput" placeholder="Enter OpenAI API Key">
+  <button id="saveApiKeyButton">Save API Key</button>
+
+  <h2>Upload Your Resume</h2>
+  <input type="file" id="resumeInput" accept=".pdf,.doc,.docx,.txt">
+  <button id="uploadButton">Upload</button>
+
+  <label for="userData">Resume Data:</label><br>
+  <textarea id="userData" rows="10" cols="50"></textarea><br><br>
+  <button id="saveResumeDataButton">Save Resume Data</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
