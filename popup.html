@@ -1,3 +1,4 @@
+<!-- popup.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,12 +12,8 @@
   <input type="password" id="apiKeyInput" placeholder="Enter OpenAI API Key">
   <button id="saveApiKeyButton">Save API Key</button>
 
-  <h2>Upload Your Resume</h2>
-  <input type="file" id="resumeInput" accept=".pdf,.doc,.docx,.txt">
-  <button id="uploadButton">Upload</button>
-
-  <label for="userData">Resume Data:</label><br>
-  <textarea id="userData" rows="10" cols="50"></textarea><br><br>
+  <h2>Enter Your Resume Data</h2>
+  <textarea id="userData" rows="10" cols="50" placeholder="Paste your resume text here"></textarea><br><br>
   <button id="saveResumeDataButton">Save Resume Data</button>
 
   <script src="popup.js"></script>

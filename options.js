@@ -1,3 +1,4 @@
+/* options.js */
 document.addEventListener('DOMContentLoaded', () => {
     // Load stored settings
     chrome.storage.local.get(['apiKey', 'userData'], (result) => {
@@ -18,4 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Settings saved.');
         });
     });
-}); 
+});
